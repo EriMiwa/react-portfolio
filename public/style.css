@@ -1,0 +1,19 @@
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: scrollbar;
+    scroll-behavior: smooth;
+}
+  
+body {
+    background: #fff;
+    font: 400 12px/1.8 "Open Sans", sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main {
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+}

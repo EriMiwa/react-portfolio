@@ -1,0 +1,212 @@
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+p, ol, ul, blockquote {
+    margin: 0 0 20px;
+}
+
+a, .btn {
+    transition: all 0.125s ease-in-out 0s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.module, .module-small {
+    position: relative;
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.font-alt {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.module-title {
+    position: relative;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    color: #111;
+    margin: 0 0 70px;
+}
+
+.module-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 70px;
+}
+
+.module-title + .module-subtitle {
+    margin-top: -35px;
+}
+
+.font-serif {
+    font-family: Volkhov, "Times New Roman", sans-serif;
+    font-style: italic;
+}
+.filter {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 70px;
+}
+
+.font-alt {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.filter > li {
+    display: inline-block;
+    padding: 0 0 10px;
+    margin: 0 25px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #aaa;
+    outline: 0;
+}
+
+a {
+    transition: all 0.125s ease-in-out 0s;
+    color: rgb(17, 17, 17);
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+
+.works-grid {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.work-item {
+    max-width: 400px;
+    float: left;
+    margin: 0;
+}
+
+.work-item > a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.work-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-image img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.work-caption {
+    width: 100%;
+    padding: 0 20px;
+    opacity: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.work-caption, .work-image > img, .work-image:after {
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.work-title {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 6px;
+}
+
+.works-grid.works-hover-w .work-title {
+    color: #111;
+}
+
+.work-descr {
+    color: #aaa;
+}
+
+.bg-dark {
+    background: #111;
+    color: #fff;
+}
+
+.module-small {
+    padding: 70px 0;
+}
+
+.callout-text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.callout-title {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+.callout-btn-box {
+    text-align: right;
+    padding-top: 4px;
+}
+
+.btn {
+    box-shadow: none;
+    border-radius: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    padding: 8px 37px;
+}
+
+.btn.btn-w {
+    background: rgba(255, 255, 255, 0.8);
+    color: #111;
+}
+
+.btn.btn-round {
+    border-radius: 2px;
+} 
+
+.cf:before,
+.cf:after{
+    content: "";
+    display: table;
+}
+
+.cf:after{ clear: both; }
+.cf{ zoom: 1; } /* For IE 6/7 */

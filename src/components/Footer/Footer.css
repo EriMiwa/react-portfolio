@@ -1,0 +1,53 @@
+p, ol, ul, blockquote {
+    margin: 0px 0px 20px;
+}
+
+.divider-d {
+    border-top: 1px solid rgb(32, 32, 32);
+    margin: 0px;
+}
+
+.footer {
+    padding: 10px 0px;
+}
+
+.bg-dark {
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+}
+
+.footer .copyright {
+    margin: 0px;
+}
+
+.font-alt {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bg-dark a {
+    color: rgb(170, 170, 170);
+}
+
+a, .btn {
+    transition: all 0.125s ease-in-out 0s;
+}
+
+.footer .footer-social-links a {
+    display: inline-block;
+    padding: 0px 6px;
+}
+
+
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+
+    .copyright, .footer-social-links {
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+}

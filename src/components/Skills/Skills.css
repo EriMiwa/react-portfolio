@@ -1,0 +1,44 @@
+.section {
+    display: block;
+}
+
+.module, .module-small {
+    position: relative;
+    background-size: cover;
+    padding: 140px 0px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.module-title {
+    position: relative;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    color: #111;
+    margin: 0 0 70px;
+}
+
+.module-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 70px;
+}
+
+.font-serif {
+    font-family: Volkhov, "Times New Roman", sans-serif;
+    font-style: italic;
+}
+
+.module-title + .module-subtitle {
+    margin-top: -35px;
+}
+
+/* fade-in animation */
+/* .fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+} */
