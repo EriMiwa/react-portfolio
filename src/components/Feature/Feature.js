@@ -7,12 +7,12 @@ class Feature extends React.Component {
     render () {
         return (
             <>
-            <div className="alt-features-item fadein">
-                <div className="alt-features-icon">
-                    <span className={this.props.icon}></span>
+                <div className="alt-features-item fadein">
+                    <div className="alt-features-icon">
+                        <span className={this.props.icon}></span>
+                    </div>
+                    <h3 className="alt-features-title font-alt">{this.props.title}</h3>{this.props.text}
                 </div>
-                <h3 className="alt-features-title font-alt">{this.props.title}</h3>{this.props.text}
-            </div>
             </>
         );
     }

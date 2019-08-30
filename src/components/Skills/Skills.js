@@ -27,25 +27,25 @@ class Skills extends React.Component{
     render() {
         return (
             <>
-            <section className="module" id="skills">
-                <Container>
-                    <Row>
-                        <Col md={{ span: 6, offset: 3 }}>
-                            <h2 className="module-title font-alt fadein">My Skills</h2>
-                            <div className="module-subtitle font-serif fadein">
-                                I'm a Freelance Web Developer & Web Project Manager based in Vancouver, Canada. Highly experienced in planning & project management websites.
-                            </div>
-                        </Col>
-                    </Row>
-                    <Row className='multi-columns-row'>
-                        {
-                            this.state.skills.map(skill => {
-                                return <Skill  icon={skill.icon} title={skill.title} text={skill.text} key={skill.title} />
-                            })
-                        }
-                    </Row>
-                </Container>
-            </section>
+                <section className="module" id="skills">
+                    <Container>
+                        <Row>
+                            <Col md={{ span: 6, offset: 3 }}>
+                                <h2 className="module-title font-alt fadein">My Skills</h2>
+                                <div className="module-subtitle font-serif fadein">
+                                    I'm a Freelance Web Developer & Web Project Manager based in Vancouver, Canada. Highly experienced in planning & project management websites.
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className='multi-columns-row'>
+                            {
+                                this.state.skills.map(skill => {
+                                    return <Skill  icon={skill.icon} title={skill.title} text={skill.text} key={skill.title} />
+                                })
+                            }
+                        </Row>
+                    </Container>
+                </section>
             </>
         );
     }

@@ -4,7 +4,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Feature from '../Feature/Feature';
 import featureImg from "../../assets/images/promo.png";
 
-
 class Features extends React.Component {
     state = {
         features: [
@@ -51,9 +50,7 @@ class Features extends React.Component {
                 text: "A wonderful serenity has taken possession of my entire soul like these sweet mornings."
             }
         ]
-
     };
-
 
     render() {
         return (
@@ -63,7 +60,7 @@ class Features extends React.Component {
                         <Row>
                             <Col md={{ span: 6, offset: 3 }}>
                                 <h2 className="module-title font-alt fadein">About me</h2>
-                                <div className="module-subtitle font-serif fadein">I have </div>
+                                {/* <div className="module-subtitle font-serif fadein">description about myself</div> */}
                             </Col>
                         </Row>
                         <Row className="sm-layout">

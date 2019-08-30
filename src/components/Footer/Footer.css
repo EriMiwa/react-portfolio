@@ -39,7 +39,6 @@ a, .btn {
     padding: 0px 6px;
 }
 
-
 @media (max-width: 767px) {
     .footer {
         text-align: center;
@@ -49,5 +48,4 @@ a, .btn {
         text-align: center;
         margin: 10px 0px;
     }
-
 }

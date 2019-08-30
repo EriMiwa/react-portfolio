@@ -1,11 +1,8 @@
 import React from 'react';
 import './Home.css';
-
 import Particles from 'react-particles-js';
 
 function Home() {
-
-
     const particlesParam = {
         "particles": {
             "number": {
