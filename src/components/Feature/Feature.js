@@ -1,5 +1,4 @@
 import React from 'react';
-
 import "./Feature.css";
 
 class Feature extends React.Component {
@@ -7,7 +6,7 @@ class Feature extends React.Component {
     render () {
         return (
             <>
-                <div className="alt-features-item fadein">
+                <div className="alt-features-item">
                     <div className="alt-features-icon">
                         <span className={this.props.icon}></span>
                     </div>

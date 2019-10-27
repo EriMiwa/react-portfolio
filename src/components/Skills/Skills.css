@@ -35,3 +35,25 @@
 .module-title + .module-subtitle {
     margin-top: -35px;
 }
+
+.module-title-h3{
+    position: relative;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    color: #111;
+    margin: 0 0 25px;
+}
+
+.skill-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .skill-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

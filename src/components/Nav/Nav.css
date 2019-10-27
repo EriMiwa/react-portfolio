@@ -45,6 +45,10 @@
 
 }
 
+.navbar-right a:hover {
+    color: #aaa;
+}
+
 @media(max-width:770px) {
 
     .navbar-toggle {
@@ -76,6 +80,11 @@
         margin-top: 4px;
     }
 
+
+    button:focus, div:focus {
+        outline: 0px;
+    }
+
     .navbar-right {
         display: none;
         position: absolute;
@@ -89,9 +98,6 @@
         padding:0;
     }
 
-    .navbar-right ul li{
-        
-    }
     .navbar-right a {
         display: block;
         width: 100vw;
@@ -99,5 +105,4 @@
         border-top: 1px solid rgba(73, 71, 71, 0.15) !important;
         background: rgba(10, 10, 10, 0.7);
     }
-
 } 

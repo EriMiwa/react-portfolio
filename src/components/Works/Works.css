@@ -108,9 +108,9 @@ a {
 }
 
 .work-item {
-    max-width: 400px;
+    max-width: 60%;
     float: left;
-    margin: 0;
+    margin: 0 auto 30px;
 }
 
 .work-item > a {
