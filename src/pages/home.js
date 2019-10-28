@@ -6,7 +6,7 @@ import Features from '../components/Features/Features';
 import Form from '../components/Form/Form';
 import Footer from '../components/Footer/Footer';
 
-export default function home() {
+export default function Home(projects) {
     return (
         <>
         <Title />

@@ -10,7 +10,7 @@ class Skill extends React.Component{
                 <Col >
                     <div className="features-item">
                         <div className="features-icon">
-                            <img src={this.props.icon} style={{width:"30px"}}/>
+                            <img src={this.props.icon} style={{width:"30px"}} alt="icon"/>
                         </div>
                         <h3 className="features-title font-alt">{this.props.title}</h3>
                     </div>

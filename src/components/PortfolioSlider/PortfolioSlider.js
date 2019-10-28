@@ -2,17 +2,17 @@ import React from 'react';
 import './PortfolioSlider.css';
 import {Container, Carousel, Row, Col} from 'react-bootstrap';
 
-import HtmlImg from '../../assets/images/html5.svg';
-import CssImg from '../../assets/images/css3.svg';
-import JsImg from "../../assets/images/javascript.svg";
-import ReactImg from "../../assets/images/react.svg";
-import ReduxImg from "../../assets/images/redux.svg";
-import FirebaseImg from "../../assets/images/firebase.svg";
-import MongodbImg from "../../assets/images/mongodb.svg";
-import NodeImg from "../../assets/images/node-dot-js.svg";
-import BootstrapImg from "../../assets/images/bootstrap.svg";
-import GitImg from "../../assets/images/git.svg";
-import HerokuImg from "../../assets/images/heroku.svg";
+// import HtmlImg from '../../assets/images/html5.svg';
+// import CssImg from '../../assets/images/css3.svg';
+// import JsImg from "../../assets/images/javascript.svg";
+// import ReactImg from "../../assets/images/react.svg";
+// import ReduxImg from "../../assets/images/redux.svg";
+// import FirebaseImg from "../../assets/images/firebase.svg";
+// import MongodbImg from "../../assets/images/mongodb.svg";
+// import NodeImg from "../../assets/images/node-dot-js.svg";
+// import BootstrapImg from "../../assets/images/bootstrap.svg";
+// import GitImg from "../../assets/images/git.svg";
+// import HerokuImg from "../../assets/images/heroku.svg";
 
 import Img01 from '../../assets/images/ScreenShot_01.png';
 import Img02 from '../../assets/images/ScreenShot_02.png';
@@ -61,7 +61,7 @@ export default function PortfolioSlider(props) {
                                 </li>
                                 <li><strong>Date: </strong><span className="font-serif">August, 2019</span>
                                 </li>
-                                <li><strong>Github: </strong><span className="font-serif"><a href="https://github.com/EriMiwa/ravenous" target="_blank">https://github.com/EriMiwa/ravenous</a></span>
+                                <li><strong>Github: </strong><span className="font-serif"><a href="https://github.com/EriMiwa/ravenous" target="_blank" rel="noopener noreferrer">https://github.com/EriMiwa/ravenous</a></span>
                                 </li>
                             </ul>
                             </div>
