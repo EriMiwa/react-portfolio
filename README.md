@@ -14,5 +14,5 @@ Around 2-3 weeks(still progressing!).
 ## 🔥What I stacked and how solved it.
 Layout using Bootstrap didn't show up as I expected. I took the time to lead documentations. But it was a good opportunity for getting documentation leading skill. Enjoying even stacking is one of the great solutions, I think.😊
 
-## ✋What I wont to progress for next project.
+## ✋What I want to progress for the next project.
 Trying more Interactive animations!
