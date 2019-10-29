@@ -31,7 +31,7 @@ class App extends React.Component{
                 <Navigation />
                 <Switch>
                     <Route exact path="/" component={Home}/>
-                    <Route exact path="/project" render={()=><Project projects={this.state.projects}/>}/>
+                    <Route exact path="/project/1" render={()=><Project projects={this.state.projects}/>}/>
                 </Switch>
                 </main>
             </Router>

@@ -12,19 +12,19 @@ class Features extends React.Component {
             {
                 icon: "icon-strategy",
                 title: "Branding",
-                text: "Considering the value and the strength of the company's brand is a start point for making Web contents."
+                text: "Considering the value and the strength of the company's brand is a start point for making Web contents. Through effective meetings with clients, I propose the progress plan.. "
             },
             {
                 icon: "icon-tools-2",
                 title: "Development",
-                text: "A wonderful serenity has taken possession of my entire soul like these sweet mornings."
+                text: "Currently, I'm studying web development from scratch. my work experiences with diversity-carrying teams made me awake my curiosity and desire to grow up my developing skills. Talking with developers and joining meet up are also my big pleasures! Learning with joy and passion is one of my policies in my life."
             }
         ],
         features2: [
             {
                 icon: "icon-happy",
                 title: "BAKING AND COOKING",
-                text: "I worked as a pastry chef for 2 years in Paris and in Osaka. My curiosity to find delicious foods is still working! through knowing food cultures, We understand diversity of the world. I also love to host my friends with seasonal dishes anytime❤"
+                text: "I worked as a pastry chef for 2 years in Paris and Osaka. My curiosity to find delicious foods is still working! through knowing food cultures, We understand the diversity of the world. I also love to host my friends with seasonal dishes anytime❤"
             },
             {
                 icon: "icon-heart",
@@ -42,7 +42,7 @@ class Features extends React.Component {
                             <Row>
                                 <Col md={{ span: 6, offset: 3 }}>
                                     <h2 className="module-title font-alt">About me</h2>
-                                    <div className="module-subtitle font-serif">I introduce myself briefly about what things I have curiosity and what is my hobby.</div>
+                                    <div className="module-subtitle font-serif">I introduce myself briefly about what things I have curiosity and what is my hobby. I appreciate getting in touch with you!</div>
                                 </Col>
                             </Row>
                         <Row className="sm-layout">

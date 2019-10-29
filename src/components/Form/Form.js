@@ -3,7 +3,8 @@ import "./Form.css";
 import { Container, Col, Row } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faInstagram, faGithub,  } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -16,13 +17,16 @@ function Form() {
                         <Row>
                             <Col md={{ span: 6, offset: 3 }}>
                                 <h2 className="module-title font-alt fadein">Get in touch</h2>
-                                <div className="module-subtitle font-serif"></div>
+                                <div className="module-subtitle font-serif">Please feel free about getting in touch with me!</div>
                             </Col>
                         </Row>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn="fadeIn">
                         <Row className='multi-columns-row'>
                             <div className="social-links">
+                                <a href="mailto:erikamiwa612@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faEnvelopeOpen} />
+                                </a>
                                 <a href="https://www.linkedin.com/in/erimiwa/" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
@@ -35,7 +39,7 @@ function Form() {
                             </div>
                         </Row>
                     </ScrollAnimation>
-                    <ScrollAnimation animateIn="fadeIn">
+                    {/* <ScrollAnimation animateIn="fadeIn">
                         <Row>
                             <Col  sm={{ span: 6, offset: 3 }} className="col-sm-6 col-sm-offset-3 fadein">
                                 <form id="contactForm" method="post" action="https://formspree.io/erikamiwa612@gmail.com">
@@ -63,7 +67,7 @@ function Form() {
                                 <div className="ajax-response font-alt" id="contactFormResponse"></div>
                             </Col>
                         </Row>
-                    </ScrollAnimation>
+                    </ScrollAnimation> */}
                 </Container>
             </section>
             </>

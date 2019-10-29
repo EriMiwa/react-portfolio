@@ -2,24 +2,19 @@ import React from 'react';
 import './PortfolioSlider.css';
 import {Container, Carousel, Row, Col} from 'react-bootstrap';
 
-// import HtmlImg from '../../assets/images/html5.svg';
-// import CssImg from '../../assets/images/css3.svg';
-// import JsImg from "../../assets/images/javascript.svg";
-// import ReactImg from "../../assets/images/react.svg";
-// import ReduxImg from "../../assets/images/redux.svg";
-// import FirebaseImg from "../../assets/images/firebase.svg";
-// import MongodbImg from "../../assets/images/mongodb.svg";
-// import NodeImg from "../../assets/images/node-dot-js.svg";
-// import BootstrapImg from "../../assets/images/bootstrap.svg";
-// import GitImg from "../../assets/images/git.svg";
-// import HerokuImg from "../../assets/images/heroku.svg";
+export default class PortfolioSlider extends React.Component {
+    state = {
+        data: null
+    };
 
-import Img01 from '../../assets/images/ScreenShot_01.png';
-import Img02 from '../../assets/images/ScreenShot_02.png';
+    setProjectData() {
+        this.setState({data: this.props.projects})
+        console.log(this.state.data)
+    }
 
-export default function PortfolioSlider(props) {
-    return (
-        <>
+
+    render () {
+        return (
             <section className="module">
                 <Container>
                     <Row className="post-images-slider">
@@ -28,14 +23,14 @@ export default function PortfolioSlider(props) {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src={Img01}
+                                        // src={Img01}
                                         alt="First slide"
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src={Img02}
+                                        // src={Img02}
                                         alt="Second slide"
                                     />
                                 </Carousel.Item>
@@ -67,7 +62,7 @@ export default function PortfolioSlider(props) {
                             </div>
                         </Col>
                         <Col sm={true} md={6} lg={6}>
-                            <p>This is a React made App which can searches services using Yelp API. The services can be showed the result according to "Best mach", "Highest rated" or "Most reviewed" by using the buttons set on under the search bar. Each service has the information of own service name, address, category, star points and review numbers. This is my first project using API so that I tried to understand how it works and how I should develop the data structure.</p>
+                            <p>This is a React made App which can search services using Yelp API. The services can be showed the result according to "Best mach", "Highest rated" or "Most reviewed" by using the buttons set on under the search bar. Each service has the information of own service name, address, category, star points and review numbers. This is my first project using API so that I tried to understand how it works and how I should develop the data structure.</p>
                             <p><strong>the points that I learned by this project.</strong></p>
                             <ul style={{paddingInlineStart:"20px"}}>
                                 <li>Understanding how to fetch API using XML.</li>
@@ -77,6 +72,6 @@ export default function PortfolioSlider(props) {
                     </Row>
                 </Container>
             </section>
-        </>
-    )
+        )
+    }
 }
