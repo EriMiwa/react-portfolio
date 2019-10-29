@@ -3,15 +3,6 @@ import './PortfolioSlider.css';
 import {Container, Carousel, Row, Col} from 'react-bootstrap';
 
 export default class PortfolioSlider extends React.Component {
-    state = {
-        data: null
-    };
-
-    setProjectData() {
-        this.setState({data: this.props.projects})
-        console.log(this.state.data)
-    }
-
 
     render () {
         return (
@@ -23,14 +14,14 @@ export default class PortfolioSlider extends React.Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        // src={Img01}
+                                        src={this.props.project.img01}
                                         alt="First slide"
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        // src={Img02}
+                                        src={this.props.project.img02}
                                         alt="Second slide"
                                     />
                                 </Carousel.Item>
@@ -40,7 +31,8 @@ export default class PortfolioSlider extends React.Component {
                     <Row className="multi-columns-row">
                         <Col sm={true} md={4} lg={4}>
                             <div className="alt-features-item">
-                                <h3 className="alt-features-title font-alt">Development skills I used</h3>HTML / CSS / React / XML / Yelp API
+                                <h3 className="alt-features-title font-alt">Development skills I used</h3>
+                                {this.props.project.skills}
                             </div>
                         </Col>
                         
@@ -52,21 +44,24 @@ export default class PortfolioSlider extends React.Component {
                             <h5 className="work-details-title font-alt">Project Details</h5>
                             <p></p>
                             <ul>
-                                <li><strong>Client: </strong><span className="font-serif">-</span>
+                                <li><strong>Client: </strong><span className="font-serif">{this.props.project.client}</span>
                                 </li>
-                                <li><strong>Date: </strong><span className="font-serif">August, 2019</span>
+                                <li><strong>Date: </strong><span className="font-serif">{this.props.project.date}</span>
                                 </li>
-                                <li><strong>Github: </strong><span className="font-serif"><a href="https://github.com/EriMiwa/ravenous" target="_blank" rel="noopener noreferrer">https://github.com/EriMiwa/ravenous</a></span>
+                                <li><strong>URL: </strong><span className="font-serif"><a href={this.props.project.url} target="_blank" rel="noopener noreferrer">{this.props.project.url}</a></span>
                                 </li>
                             </ul>
                             </div>
                         </Col>
                         <Col sm={true} md={6} lg={6}>
-                            <p>This is a React made App which can search services using Yelp API. The services can be showed the result according to "Best mach", "Highest rated" or "Most reviewed" by using the buttons set on under the search bar. Each service has the information of own service name, address, category, star points and review numbers. This is my first project using API so that I tried to understand how it works and how I should develop the data structure.</p>
+                            <p>{this.props.project.overview}</p>
                             <p><strong>the points that I learned by this project.</strong></p>
                             <ul style={{paddingInlineStart:"20px"}}>
-                                <li>Understanding how to fetch API using XML.</li>
-                                <li>Understanding how to use props and states on React.</li>
+                                {
+                                    this.props.project.points.map(point => {
+                                        return <li>{point}</li>
+                                    })
+                                }
                             </ul>
                         </Col>
                     </Row>

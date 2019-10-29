@@ -10,7 +10,7 @@ function Footer() {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-6">
-                            <p className="copyright font-alt">&copy; 2019&nbsp;<a href="index.html">Erika Miwa</a>, All Rights Reserved</p>
+                            <p className="copyright font-alt">&copy; 2019&nbsp;<a href="/">Erika Miwa</a>, All Rights Reserved</p>
                         </div>
                     </div>
                 </div>

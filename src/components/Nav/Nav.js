@@ -36,7 +36,7 @@ class Navigation extends React.Component {
                 <div className="menu">
                     <Container className="nav-container">
                             <div className="logo navbar-brand">
-                                <a href="/#home">ERIKA MIWA</a>
+                                <a href="/">ERIKA MIWA</a>
                             </div>
                             <div>
                                 <button 
