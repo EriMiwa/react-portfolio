@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Img01 from './assets/images/ScreenShot_01.png';
 import Img02 from './assets/images/ScreenShot_02.png';
 import Img03 from './assets/images/ScreenShot_03.png';
-import Img04 from './assets/images/ScreenShot_04.png';
 import Img05 from './assets/images/ScreenShot_05.png';
 import Img06 from './assets/images/ScreenShot_06.png';
 import Img07 from './assets/images/ScreenShot_07.png';
@@ -55,7 +54,7 @@ class App extends React.Component{
                     skills: "HTML / CSS / React / Bootstrap",
                     client: "-",
                     date: "October, 2019",
-                    url: "https://portfolio-6f76b.firebaseapp.com/",
+                    url: "https://github.com/EriMiwa/react-portfolio",
                     overview: 'This is a React made App which introduce me and my works. I used React-Bootstrap as CSS framework and tried to use some animation libraries such as Particles.js, wow.js, react animations.',
                     points: [
                         "Understanding Bootstrap, animation libraries.",
