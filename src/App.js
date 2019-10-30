@@ -56,9 +56,10 @@ class App extends React.Component{
                     client: "-",
                     date: "October, 2019",
                     url: "https://portfolio-6f76b.firebaseapp.com/",
-                    overview: 'This is a React made App which introduce me and my works. THe main concept of this project is ',
+                    overview: 'This is a React made App which introduce me and my works. I used React-Bootstrap as CSS framework and tried to use some animation libraries such as Particles.js, wow.js, react animations.',
                     points: [
-                        "Understanding how to fetch Spotify API, store the play list on user account"
+                        "Understanding Bootstrap, animation libraries.",
+                        "Data structure using state for portfolio's works"
                     ]
                 },
             ]
@@ -74,6 +75,7 @@ class App extends React.Component{
                     <Route exact path="/" render={()=><Home projects={this.state.projects}/>}/>
                     {this.state.projects.map(project => 
                         <Route 
+                            key={project.id}
                             exact path={`/project/project${project.id}`} 
                             render={
                                 () => <Project project={project} />

@@ -14,6 +14,7 @@ export default function Home({projects}) {
             <Skills />
             <hr className="divider-w" />
             <Works projects={projects}/>
+            <hr className="divider-w"  style={{clear:"both"}}/>
             <Features />
             <hr className="divider-w"/>
             <Form /> 
