@@ -11,6 +11,10 @@ import Img03 from './assets/images/ScreenShot_03.png';
 import Img05 from './assets/images/ScreenShot_05.png';
 import Img06 from './assets/images/ScreenShot_06.png';
 import Img07 from './assets/images/ScreenShot_07.png';
+import Img08 from './assets/images/ScreenShot_08.png';
+import Img09 from './assets/images/ScreenShot_09.png';
+import Img12 from './assets/images/ScreenShot_12.png';
+
 
 class App extends React.Component{
     constructor(props){
@@ -59,6 +63,21 @@ class App extends React.Component{
                     points: [
                         "Understanding Bootstrap, animation libraries.",
                         "Data structure using state for portfolio's works"
+                    ]
+                },
+                {
+                    id:4,
+                    title: "MOGU MOGU recipe!",
+                    img01: Img08,
+                    img02: Img12,
+                    skills: "HTML / CSS / React / Food2fork API / BootStrap",
+                    client: "-",
+                    date: "November, 2019",
+                    url: "https://github.com/EriMiwa/recipes",
+                    overview: 'This is a recipe search App which shows recipe lists and recipe details.',
+                    points: [
+                        "Understanding a way how to switch lists page and details page.",
+                        "Understanding the usage of BootStrap."
                     ]
                 },
             ]

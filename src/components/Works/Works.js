@@ -3,7 +3,6 @@ import './Works.css';
 import {Container, Row, Col} from "react-bootstrap";
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
-import img from '../../assets/images/ScreenShot_01.png'
 
 class Works extends React.Component {
 
@@ -49,28 +48,6 @@ class Works extends React.Component {
                                     )})
                                 }
                             </div>
-
-                            {/* <div className="work-list">
-                                {this.props.projects.map(project => {
-                                    return (
-                                        <div className="work-item" key={project.id}>
-                                            <li>
-                                                <a href={`/project/project${project.id}`}>
-                                                    <div className="work-image">
-                                                        <img src={project.img01} alt="Portfolio Item" />
-                                                    </div>
-                                                    <div className="work-caption font-alt overlay-thumb">
-                                                        <div class="details">
-                                                            <h3 className="work-title title">{project.title}</h3>
-                                                            <div className="work-descr info">Web App</div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </div>
-                                    )
-                                })}
-                            </div> */}
                         </ul>
                     </ScrollAnimation>
                 </section>
