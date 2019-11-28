@@ -29,7 +29,7 @@ class Works extends React.Component {
                                     return (
                                         <div>
                                             <figure className="snip1314 work-item" key={project.id}>
-                                                <img src={project.img01} alt="sample13"/>
+                                                <img src={project.workImage01} alt="sample image"/>
                                                 <div className="border one">
                                                     <div></div>
                                                 </div>

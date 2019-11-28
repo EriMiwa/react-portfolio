@@ -5,6 +5,11 @@ import Project from './pages/project';
 import Navigation from './components/Nav/Nav';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import workImage01 from './assets/images/workImage01.jpg';
+import workImage02 from './assets/images/workImage02.jpg';
+import workImage03 from './assets/images/workImage03.jpg';
+import workImage04 from './assets/images/workImage04.jpg';
+
 import Img01 from './assets/images/ScreenShot_01.png';
 import Img02 from './assets/images/ScreenShot_02.png';
 import Img03 from './assets/images/ScreenShot_03.png';
@@ -24,12 +29,14 @@ class App extends React.Component{
                 {
                     id:1,
                     title: "ravenous",
+                    workImage01: workImage01,
                     img01: Img01,
                     img02: Img02,
                     skills: "HTML / CSS / React / XML / Yelp API",
                     client: "-",
                     date: "August, 2019",
-                    url: "https://github.com/EriMiwa/ravenous",
+                    url: "https://ravenous-me.firebaseapp.com/",
+                    github:"https://github.com/EriMiwa/ravenous",
                     overview: 'This is a React made App which can search services using Yelp API. The services can be showed the result according to "Best mach", "Highest rated" or "Most reviewed" by using the buttons set on under the search bar. Each service has the information of own service name, address, category, star points and review numbers. This is my first project using API so that I tried to understand how it works and how I should develop the data structure.',
                     points: [
                         "Understanding how to fetch API using XML.",
@@ -39,12 +46,14 @@ class App extends React.Component{
                 {
                     id:2,
                     title: "jammming",
+                    workImage01: workImage02,
                     img01: Img03,
                     img02: Img05,
                     skills: "HTML / CSS / React / Spotify API",
                     client: "-",
                     date: "September, 2019",
-                    url: "https://github.com/EriMiwa/jammming",
+                    url: "https://jammming-me.firebaseapp.com",
+                    github: "https://github.com/EriMiwa/jammming",
                     overview: 'This is a React made App which can search songs and make play lists on Spotify using API. The result area shows the songs match with your searched keywords. You can create your original play lists picked from the search result, and it can store on your Spotify account.',
                     points: [
                         "Understanding how to fetch Spotify API, store the play list on user account"
@@ -53,12 +62,14 @@ class App extends React.Component{
                 {
                     id:3,
                     title: "My portfolio",
+                    workImage01: workImage03,
                     img01: Img06,
                     img02: Img07,
                     skills: "HTML / CSS / React / Bootstrap",
                     client: "-",
                     date: "October, 2019",
-                    url: "https://github.com/EriMiwa/react-portfolio",
+                    url: "https://m-erika-portfolio.firebaseapp.com/",
+                    github: "https://github.com/EriMiwa/react-portfolio",
                     overview: 'This is a React made App which introduce me and my works. I used React-Bootstrap as CSS framework and tried to use some animation libraries such as Particles.js, wow.js, react animations.',
                     points: [
                         "Understanding Bootstrap, animation libraries.",
@@ -68,12 +79,14 @@ class App extends React.Component{
                 {
                     id:4,
                     title: "MOGU MOGU recipe!",
+                    workImage01: workImage04,
                     img01: Img08,
                     img02: Img12,
                     skills: "HTML / CSS / React / Food2fork API / BootStrap",
                     client: "-",
                     date: "November, 2019",
-                    url: "https://github.com/EriMiwa/recipes",
+                    url: "https://recipes-me.firebaseapp.com/",
+                    github: "https://github.com/EriMiwa/recipes",
                     overview: 'This is a recipe search App which shows recipe lists and recipe details.',
                     points: [
                         "Understanding a way how to switch lists page and details page.",

@@ -50,6 +50,8 @@ export default class PortfolioSlider extends React.Component {
                                 </li>
                                 <li><strong>URL: </strong><span className="font-serif"><a href={this.props.project.url} target="_blank" rel="noopener noreferrer">{this.props.project.url}</a></span>
                                 </li>
+                                <li><strong>Github: </strong><span className="font-serif"><a href={this.props.project.github} target="_blank" rel="noopener noreferrer">{this.props.project.github}</a></span>
+                                </li>
                             </ul>
                             </div>
                         </Col>
