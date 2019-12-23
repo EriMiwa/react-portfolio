@@ -12,24 +12,24 @@ class Features extends React.Component {
             {
                 icon: "icon-strategy",
                 title: "Branding",
-                text: "Considering the value and the strength of the company's brand is a start point for making Web contents. Through effective meetings with clients, I propose the progress plan.. "
+                text: "I believe brand strength ought to be leveraged to create engaging web content, in which brand value can also be visually accurate in digital form."
             },
             {
                 icon: "icon-tools-2",
                 title: "Development",
-                text: "Currently, I'm studying web development from scratch. my work experiences with diversity-carrying teams made me awake my curiosity and desire to grow up my developing skills. Talking with developers and joining meet up are also my big pleasures! Learning with joy and passion is one of my policies in my life."
+                text: "My work experience with diverse teams feeds my curiosity and desire to continue developing my coding skills. I enjoy meeting with various developers in town. Learning is my joy and passion in life."
             }
         ],
         features2: [
             {
                 icon: "icon-happy",
                 title: "BAKING AND COOKING",
-                text: "I worked as a pastry chef for 2 years in Paris and Osaka. My curiosity to find delicious foods is still working! through knowing food cultures, We understand the diversity of the world. I also love to host my friends with seasonal dishes anytime❤"
+                text: "I worked as a pastry chef for 2 years in Paris and Osaka. I love delicious foods! Through food cultures, we can understand and appreciate our diversity. I also enjoy hosting friends with homemade seasonal dishes. ❤"
             },
             {
                 icon: "icon-heart",
                 title: "FLOWER ARRANGEMENT",
-                text: "I enjoy doing something creative when I'm free. The flower arrangement is one of my creative hobbies! I have experiences to volunteer bridal flower arrangement at a chapel over 3 years and teach IKEBANA(Japanese flower arrangement)."
+                text: "I thrive in a creative-inducing environment. Flower arrangement is one of my creative hobbies. I volunteered and learned bridal flower arrangement for 3 years and taught IKEBANA (Japanese flower arrangement)."
             }
         ]
     };
@@ -42,7 +42,7 @@ class Features extends React.Component {
                             <Row>
                                 <Col md={{ span: 6, offset: 3 }}>
                                     <h2 className="module-title font-alt">About me</h2>
-                                    <div className="module-subtitle font-serif">I introduce myself briefly about what things I have curiosity and what is my hobby. I appreciate getting in touch with you!</div>
+                                    {/* <div className="module-subtitle font-serif">I introduce myself briefly about what things I have curiosity and what is my hobby. I appreciate getting in touch with you!</div> */}
                                 </Col>
                             </Row>
                         <Row className="sm-layout">

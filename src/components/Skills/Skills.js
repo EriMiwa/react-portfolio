@@ -79,7 +79,7 @@ class Skills extends React.Component{
                                 <Col md={{ span: 6, offset: 3 }}>
                                     <h2 className="module-title font-alt">Hi, There! I'm Erika.</h2>
                                     <div className="module-subtitle font-serif">
-                                         I'm a Web Developer & Web Project Manager based in Vancouver, Canada. I have over 5 years experienced in planning & project management websites at Web agencies in Japan. I passionate about finding solutions to achieve client's goals and progressing the Web project!
+                                         I'm a Web Developer & Web Project Manager based in Vancouver, Canada. I have over 5 years experience in planning & project management at Web agencies in Japan. I am passionate about finding solutions and improvements for my clients.
                                     </div>
                                 </Col>
                             </Row>

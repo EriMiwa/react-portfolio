@@ -1,5 +1,6 @@
 {
   "name": "erika_portfolio",
+  "homepage": "https://m-erika-portfolio.firebaseapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

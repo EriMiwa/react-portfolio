@@ -17,7 +17,7 @@ function Form() {
                         <Row>
                             <Col md={{ span: 6, offset: 3 }}>
                                 <h2 className="module-title font-alt fadein">Get in touch</h2>
-                                <div className="module-subtitle font-serif">Please feel free about getting in touch with me!</div>
+                                <div className="module-subtitle font-serif">Please feel free to get in touch with me for any further inquiries.</div>
                             </Col>
                         </Row>
                     </ScrollAnimation>
