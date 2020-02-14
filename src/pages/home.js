@@ -6,20 +6,22 @@ import Features from '../components/Features/Features';
 import Form from '../components/Form/Form';
 import Footer from '../components/Footer/Footer';
 
-export default function Home({projects}) {
-    return (
-        <>
-        <Title />
-        <div className='main'>
-            <Skills />
-            <hr className="divider-w" />
-            <Works projects={projects}/>
-            <hr className="divider-w"  style={{clear:"both"}}/>
-            <Features />
-            <hr className="divider-w"/>
-            <Form /> 
-            <Footer />
-        </div>
-        </>
-    )
+const Home = ({...rest}) => {
+  return (
+    <>
+    <Title />
+    <div className='main'>
+      <Skills />
+      <hr className="divider-w" />
+      <Works {...rest} />
+      <hr className="divider-w"  style={{clear:"both"}}/>
+      <Features />
+      <hr className="divider-w"/>
+      <Form /> 
+      <Footer />
+    </div>
+    </>
+  )
 }
+
+export default Home;
