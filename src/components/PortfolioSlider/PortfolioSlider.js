@@ -10,20 +10,17 @@ const PortfolioSlider = ({project}) => {
         <Row className="post-images-slider">
           <Col sm={12}>
             <Carousel >
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={images[1]}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={images[2]}
-                  alt="Second slide"
-                />
-              </Carousel.Item>
+              {
+                images.map((image, index) => {
+                  return <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={image}
+                      alt="slide"
+                    />
+                  </Carousel.Item>
+                })
+              }
             </Carousel>
           </Col>
       </Row>
@@ -57,7 +54,7 @@ const PortfolioSlider = ({project}) => {
             <p>{overview}</p>
             <p><strong>the points that I learned by this project.</strong></p>
             <ul style={{paddingInlineStart:"20px"}}>
-               <li>{points}</li>
+              <li>{points}</li>
             </ul>
           </Col>
         </Row>
