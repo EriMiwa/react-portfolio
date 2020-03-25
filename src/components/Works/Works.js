@@ -5,28 +5,29 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Works = ({projects}) => {
+
   return (
     <>
       <section className="module" id="works">
         <Container>
-            <ScrollAnimation animateIn="fadeIn">
-                <Row>
-                    <Col md={{ span: 6, offset: 3 }}>
-                        <h2 className="module-title font-alt">My Works</h2>
-                        <div className="module-subtitle font-serif"></div>
-                    </Col>
-                </Row>
-            </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">
+            <Row>
+              <Col md={{ span: 6, offset: 3 }}>
+                <h2 className="module-title font-alt">My Works</h2>
+                <div className="module-subtitle font-serif"></div>
+              </Col>
+            </Row>
+          </ScrollAnimation>
         </Container>
         <ScrollAnimation animateIn="fadeIn">
           <ul className="works-grid works-grid-3 cf" id="works-grid">
             <div className="work-list">
               {
-                projects.map(project => {
+                projects.map((project, index) => {
                 return (
                   <div>
-                    <figure className="snip1314 work-item" key={project.id}>
-                      <img src={project.workImage01} alt="sample image"/>
+                    <figure className="snip1314 work-item" key={index}>
+                      <img src={project.images[0]} alt="sample image"/>
                       <div className="border one">
                         <div></div>
                       </div>
@@ -39,7 +40,7 @@ const Works = ({projects}) => {
                           <span className="font-alt">{project.skills}</span>
                         </h5>
                       </figcaption>
-                      <a href={`/project/project${project.id}`}></a>
+                      <a href={`/project/${index}`}></a>
                     </figure>
                   </div>
                 )})

@@ -3,7 +3,7 @@ import './PortfolioSlider.css';
 import {Container, Carousel, Row, Col} from 'react-bootstrap';
 
 const PortfolioSlider = ({project}) => {
-
+  const {images, skills, client, date, url, github, overview, points} = project
   return (
     <section className="module">
       <Container>
@@ -13,14 +13,14 @@ const PortfolioSlider = ({project}) => {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={project.img01}
+                  src={images[1]}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={project.img02}
+                  src={images[2]}
                   alt="Second slide"
                 />
               </Carousel.Item>
@@ -31,7 +31,7 @@ const PortfolioSlider = ({project}) => {
         <Col sm={true} md={4} lg={4}>
           <div className="alt-features-item">
             <h3 className="alt-features-title font-alt">Development skills I used</h3>
-            {project.skills}
+            {skills}
           </div>
         </Col>
       </Row>
@@ -42,26 +42,22 @@ const PortfolioSlider = ({project}) => {
               <h5 className="work-details-title font-alt">Project Details</h5>
               <p></p>
               <ul>
-                <li><strong>Client: </strong><span className="font-serif">{project.client}</span>
+                <li><strong>Client: </strong><span className="font-serif">{client}</span>
                 </li>
-                <li><strong>Date: </strong><span className="font-serif">{project.date}</span>
+                <li><strong>Date: </strong><span className="font-serif">{date}</span>
                 </li>
-                <li><strong>URL: </strong><span className="font-serif"><a href={project.url} target="_blank" rel="noopener noreferrer">{project.url}</a></span>
+                <li><strong>URL: </strong><span className="font-serif"><a href={url} target="_blank" rel="noopener noreferrer">{url}</a></span>
                 </li>
-                <li><strong>Github: </strong><span className="font-serif"><a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a></span>
+                <li><strong>Github: </strong><span className="font-serif"><a href={github} target="_blank" rel="noopener noreferrer">{github}</a></span>
                 </li>
               </ul>
             </div>
           </Col>
           <Col sm={true} md={6} lg={6}>
-            <p>{project.overview}</p>
+            <p>{overview}</p>
             <p><strong>the points that I learned by this project.</strong></p>
             <ul style={{paddingInlineStart:"20px"}}>
-              {
-                project.points.map(point => {
-                  return <li>{point}</li>
-                })
-              }
+               <li>{points}</li>
             </ul>
           </Col>
         </Row>
