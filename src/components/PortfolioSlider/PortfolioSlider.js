@@ -16,7 +16,7 @@ const PortfolioSlider = ({project}) => {
                     <img
                       className="d-block w-100"
                       src={image}
-                      alt="slide"
+                      alt={index}
                     />
                   </Carousel.Item>
                 })

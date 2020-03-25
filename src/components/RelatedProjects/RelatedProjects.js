@@ -6,7 +6,7 @@ import Img01 from '../../assets/images/grid-portfolio1.jpg';
 import Img02 from '../../assets/images/grid-portfolio2.jpg';
 import Img03 from '../../assets/images/grid-portfolio3.jpg';
 
-const project = () => {
+const RelatedProject = () => {
   return (
     <>
       <section className="module">
@@ -57,4 +57,4 @@ const project = () => {
   )
 }
 
-export default project;
+export default RelatedProject;
