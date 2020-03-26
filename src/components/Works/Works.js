@@ -4,6 +4,8 @@ import {Container, Row, Col} from "react-bootstrap";
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import {Link} from 'react-router-dom'
+
 const Works = ({projects}) => {
 
   return (
@@ -27,7 +29,7 @@ const Works = ({projects}) => {
                 return (
                   <div>
                     <figure className="snip1314 work-item" key={index}>
-                      <img src={project.images[0]} alt="sample image"/>
+                      <img src={project.images[0]} alt="screen shot"/>
                       <div className="border one">
                         <div></div>
                       </div>
@@ -40,7 +42,7 @@ const Works = ({projects}) => {
                           <span className="font-alt">{project.skills}</span>
                         </h5>
                       </figcaption>
-                      <a href={`/project/${index}`}></a>
+                      <Link to={`/project/${index}`} />
                     </figure>
                   </div>
                 )})
