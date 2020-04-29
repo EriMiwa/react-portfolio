@@ -23,29 +23,33 @@ const PortfolioSlider = ({project}) => {
               }
             </Carousel>
           </Col>
-      </Row>
-      <Row className="multi-columns-row">
-        <Col sm={true} md={4} lg={4}>
-          <div className="alt-features-item">
-            <h3 className="alt-features-title font-alt">Development skills I used</h3>
-            {skills}
-          </div>
-        </Col>
-      </Row>
-      <hr className="divider-w mt-60 mb-60" />
-      <Row className="multi-columns-row">
+        </Row>
+        <Row className="multi-columns-row">
+          <Col sm={true} md={4} lg={4}>
+            <div className="alt-features-item">
+              <h3 className="alt-features-title font-alt">Development skills I used</h3>
+              {skills}
+            </div>
+          </Col>
+        </Row>
+        <hr className="divider-w mt-60 mb-60" />
+        <Row className="multi-columns-row">
           <Col sm={true} md={6} lg={6}>
             <div className="work-details">
               <h5 className="work-details-title font-alt">Project Details</h5>
               <p></p>
               <ul>
-                <li><strong>Client: </strong><span className="font-serif">{client}</span>
+                <li>
+                  <strong>Client: </strong><span className="font-serif">{client}</span>
                 </li>
-                <li><strong>Date: </strong><span className="font-serif">{date}</span>
+                <li>
+                  <strong>Date: </strong><span className="font-serif">{date}</span>
                 </li>
-                <li><strong>URL: </strong><span className="font-serif"><a href={url} target="_blank" rel="noopener noreferrer">{url}</a></span>
+                <li>
+                  <strong>URL: </strong><span className="font-serif"><a href={url} target="_blank" rel="noopener noreferrer">{url}</a></span>
                 </li>
-                <li><strong>Github: </strong><span className="font-serif"><a href={github} target="_blank" rel="noopener noreferrer">{github}</a></span>
+                <li>
+                  <strong>Github: </strong><span className="font-serif"><a href={github} target="_blank" rel="noopener noreferrer">{github}</a></span>
                 </li>
               </ul>
             </div>

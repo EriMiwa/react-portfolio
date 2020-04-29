@@ -32,49 +32,47 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <>
-        <div className="menu">
-          <Container className="nav-container">
-            <div className="logo navbar-brand">
-              <a href="/">ERIKA MIWA</a>
-            </div>
-            <div>
-              <button 
-                className="navbar-toggle" 
-                onClick={() => this.handleClick()}
-              >
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
-            </div>
-            {/* PC layout */}
-            <div className="navbar-right">
-              <ul className="font-alt">
-                <li><a href="/#home">HOME</a></li>
-                <li><a href="/#skills">SKILLS</a></li>
-                <li><a href="/#works">WORKS</a></li>
-                <li><a href="/#aboutMe">ABOUT ME</a></li>
-                <li><a href="/#contact">CONTACT</a></li>
-              </ul>
-            </div>
-            {/* SP layout */}
-            <div className="navbar-right" 
-              style={(this.state.toggle && this.state.width < 770 ? 
-              { display: "block" } : 
-              { display: "none" })}
+      <div className="menu">
+        <Container className="nav-container">
+          <div className="logo navbar-brand">
+            <a href="/">ERIKA MIWA</a>
+          </div>
+          <div>
+            <button 
+              className="navbar-toggle" 
+              onClick={() => this.handleClick()}
             >
-              <ul className="font-alt">
-                <li><a href="/#home">HOME</a></li>
-                <li><a href="/#skills">SKILLS</a></li>
-                <li><a href="/#works">WORKS</a></li>
-                <li><a href="/#aboutMe">ABOUT ME</a></li>
-                <li><a href="/#contact">CONTACT</a></li>
-              </ul>
-            </div>
-          </Container>
-        </div>
-      </>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+            </button>
+          </div>
+          {/* PC layout */}
+          <div className="navbar-right">
+            <ul className="font-alt">
+              <li><a href="/#home">HOME</a></li>
+              <li><a href="/#skills">SKILLS</a></li>
+              <li><a href="/#works">WORKS</a></li>
+              <li><a href="/#aboutMe">ABOUT ME</a></li>
+              <li><a href="/#contact">CONTACT</a></li>
+            </ul>
+          </div>
+          {/* SP layout */}
+          <div className="navbar-right" 
+            style={(this.state.toggle && this.state.width < 770 ? 
+            { display: "block" } : 
+            { display: "none" })}
+          >
+            <ul className="font-alt">
+              <li><a href="/#home">HOME</a></li>
+              <li><a href="/#skills">SKILLS</a></li>
+              <li><a href="/#works">WORKS</a></li>
+              <li><a href="/#aboutMe">ABOUT ME</a></li>
+              <li><a href="/#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </Container>
+      </div>
     );
   }
 }

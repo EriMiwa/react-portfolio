@@ -44,7 +44,6 @@ class Features extends React.Component {
             <Row>
               <Col md={{ span: 6, offset: 3 }}>
                 <h2 className="module-title font-alt">About me</h2>
-                {/* <div className="module-subtitle font-serif">I introduce myself briefly about what things I have curiosity and what is my hobby. I appreciate getting in touch with you!</div> */}
               </Col>
             </Row>
             <Row className="sm-layout">
@@ -56,9 +55,9 @@ class Features extends React.Component {
                 }
               </div>
               <div className="col-md-6 col-lg-6 hidden-xs hidden-sm">
-                  <div className="alt-services-image align-center">
-                      <img src={featureImg} alt="Feature"/>
-                  </div>
+                <div className="alt-services-image align-center">
+                  <img src={featureImg} alt="Feature"/>
+                </div>
               </div>
               <div className="col-sm-6 col-lg-3 col-xs-12">
                 {

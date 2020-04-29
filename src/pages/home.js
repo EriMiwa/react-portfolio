@@ -9,17 +9,17 @@ import Footer from '../components/Footer/Footer';
 const Home = ({...rest}) => {
   return (
     <>
-    <Title />
-    <div className='main'>
-      <Skills />
-      <hr className="divider-w" />
-      <Works {...rest} />
-      <hr className="divider-w"  style={{clear:"both"}}/>
-      <Features />
-      <hr className="divider-w"/>
-      <Form /> 
-      <Footer />
-    </div>
+      <Title />
+      <div className='main'>
+        <Skills />
+        <hr className="divider-w" />
+        <Works {...rest} />
+        <hr className="divider-w"  style={{clear:"both"}}/>
+        <Features />
+        <hr className="divider-w"/>
+        <Form /> 
+        <Footer />
+      </div>
     </>
   )
 }
